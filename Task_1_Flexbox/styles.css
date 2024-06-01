@@ -49,21 +49,26 @@ select {
 
 .flex-container {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
     border: 2px solid #ccc;
     padding: 20px;
     border-radius: 8px;
-    min-height: 150px;
     margin-top: 30px;
+    resize: both; /* Allow resizing in both directions */
+    overflow: auto; /* Enable scrolling if the content overflows */
+    gap: 10px; /* Add gap between flex items */
+    min-width: calc(100px + 4 * 10px + 40px); /* Adjust based on flex item width, gap, and padding */
+    min-height: calc(100px + 2 * 20px + 2 * 10px); /* Adjust based on flex item height, padding, and gap */
 }
 
 .flex-item {
     background-color: #4CAF50;
     color: white;
     padding: 20px;
-    margin: 5px;
     text-align: center;
     border-radius: 8px;
     font-size: 18px;
+    /* flex: 1 1 100px; Allow items to grow and shrink, with a minimum width */
 }
 
 .css-output {
@@ -126,3 +131,4 @@ textarea {
 #copy-button:hover {
     background-color: #45a049;
 }
+
