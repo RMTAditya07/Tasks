@@ -58,11 +58,11 @@ select {
     overflow: auto; /* Enable scrolling if the content overflows */
     gap: 10px; /* Add gap between flex items */
     min-width: calc(100px + 4 * 10px + 40px); /* Adjust based on flex item width, gap, and padding */
-    min-height: calc(100px + 2 * 20px + 2 * 10px); /* Adjust based on flex item height, padding, and gap */
+    min-height: calc(100px + 20px + 10px); /* Adjust based on flex item height, padding, and gap */
 }
 
 .flex-item {
-    background-color: #4CAF50;
+    background-color: #1f1257;
     color: white;
     padding: 20px;
     text-align: center;
@@ -113,9 +113,11 @@ textarea {
 }
 
 .flex-item:nth-child(2) {
+    background-color: #a01a7a;
+
 }
 #copy-button {
-    background-color: #4CAF50;
+    background-color: #580000;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -129,6 +131,6 @@ textarea {
 }
 
 #copy-button:hover {
-    background-color: #45a049;
+    background-color: #ef6d10;
 }
 
